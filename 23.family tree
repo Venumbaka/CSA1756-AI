@@ -1,0 +1,10 @@
+female(priya).
+female(subhashini).
+male(anil).
+male(subramanyam).
+parent(priya,anil).
+parent(subhashini,subramanyam).
+parent(subhashini,subramanyam).
+parent(subhashini,anil).
+mother(X,Y):-parent(X,Y),female(X).
+father(X,Y):-parent(X,Y),male(X).
